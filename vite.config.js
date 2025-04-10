@@ -10,11 +10,18 @@ export default defineConfig({
     },
   },
   optimizeDeps: {
-    include: ['antd'], // <-- force include antd for optimization
+    include: ['antd'],
   },
   build: {
+    target: 'esnext', // optional, ensures modern build
     rollupOptions: {
-      external: [], // <-- tell Rollup NOT to externalize any modules
+      external: [], // do not externalize any packages
+      output: {
+        manualChunks: undefined, // avoids splitting issues
+      },
+    },
+    commonjsOptions: {
+      transformMixedEsModules: true, // handles CJS/ESM edge cases
     },
   },
 })
