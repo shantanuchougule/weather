@@ -1,0 +1,10 @@
+.clock-container{
+    margin-top: 20px;
+}
+
+.time{
+    color: #fff;
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 400;
+}

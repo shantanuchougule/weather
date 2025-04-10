@@ -9,6 +9,7 @@ import rain from '../assets/rain.png'
 import snow from '../assets/snow.png'
 import wind from '../assets/wind.png'
 import { message } from "antd";
+import Clock from '../components/Clock'
 
 function Weather() {
 
@@ -112,8 +113,9 @@ function Weather() {
                                 <span>Wind speed</span>
                             </div>
                         </div>            
-                </div>
-            </div>
+                    </div>
+                    <Clock/>
+                 </div>
         </>
     )
 }
