@@ -13,15 +13,15 @@ export default defineConfig({
     include: ['antd'],
   },
   build: {
-    target: 'esnext', // optional, ensures modern build
+    target: 'esnext',
     rollupOptions: {
-      external: [], // do not externalize any packages
+      external: [],
       output: {
-        manualChunks: undefined, // avoids splitting issues
+        manualChunks: undefined,
       },
     },
     commonjsOptions: {
-      transformMixedEsModules: true, // handles CJS/ESM edge cases
+      transformMixedEsModules: true,
     },
   },
 })
