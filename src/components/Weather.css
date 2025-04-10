@@ -63,7 +63,7 @@ h1 {
 
 .weather-icon {
     width: 120px;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .temperature {
@@ -130,6 +130,18 @@ h1 {
 
 /* Responsive tweaks */
 @media screen and (max-width: 768px) {
+    .card {
+        place-self: center;
+        padding:  20px 30px 40px 30px;
+        border-radius: 10px;
+        background-color: rgb(167, 35, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 350px;
+        width: 90vw;
+    }
+
     .temperature {
         font-size: 3rem;
     }
@@ -140,10 +152,6 @@ h1 {
 
     .description {
         font-size: 0.95rem;
-    }
-
-    .weather-data {
-        justify-content: center;
     }
 }
 
