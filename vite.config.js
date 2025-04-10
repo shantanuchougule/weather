@@ -10,6 +10,11 @@ export default defineConfig({
     },
   },
   optimizeDeps: {
-    include: ['antd'],
+    include: ['antd'], // <-- force include antd for optimization
+  },
+  build: {
+    rollupOptions: {
+      external: [], // <-- tell Rollup NOT to externalize any modules
+    },
   },
 })
